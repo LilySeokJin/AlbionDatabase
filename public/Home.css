@@ -2168,9 +2168,12 @@ input[type="button"].btn-block {
   color: #333;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: #151515;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid #ffc107;
+  border-left: 1px solid #ffc107;
+  border-right: 1px solid #ffc107;
+  border-top: 1px solid #ffc107;
   border-radius: 0.25rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175); }
 
@@ -2295,7 +2298,7 @@ input[type="button"].btn-block {
   height: 0;
   margin: 0.75rem 0;
   overflow: hidden;
-  border-top: 1px solid #e9ecef; }
+  border-top: 1px solid #ffc107; }
 
 .dropdown-item {
   display: block;
@@ -2311,7 +2314,7 @@ input[type="button"].btn-block {
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa; }
+    background-color: #ffc107; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
@@ -2987,6 +2990,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ffc107;
   padding: 0.75rem 1.5rem; }
   .navbar > .container,
   .navbar > .container-fluid {
@@ -4135,7 +4139,7 @@ a.close.disabled {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #ffc107;
   border-radius: 0.3rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
   outline: 0; }
@@ -4158,7 +4162,7 @@ a.close.disabled {
   align-items: flex-start;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #ffc107;
   border-top-left-radius: 0.3rem;
   border-top-right-radius: 0.3rem; }
   .modal-header .close {
@@ -4179,7 +4183,7 @@ a.close.disabled {
   align-items: center;
   justify-content: flex-end;
   padding: 1rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #ffc107;
   border-bottom-right-radius: 0.3rem;
   border-bottom-left-radius: 0.3rem; }
   .modal-footer > :not(:first-child) {

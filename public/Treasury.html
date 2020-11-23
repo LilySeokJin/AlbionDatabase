@@ -50,15 +50,84 @@
         </div>
         <div class="row">
           <div class="col-md-9" style="">
-            <h1 class="">Mongol Khanate Logistics</h1>
-            <p class="text-justify">We are the Logistics team of Mongol Khanate which is a primarily EU, Lymhurst based guild focused on both PvP and PvE. We offer daily activities such as Fame Farming, Ganking, Hellgates, Mage Raids, Avalonian Raids, Crystal League, and are involved in regular ZvZ Content!&nbsp;We are new player friendly, Territory owners with Hideouts in The Roads of Avalon and Blackzone. We are looking for newer players with 5m+ Total Fame who are willing to learn from some of our more veteran players, and dip their toes into end-game content. We are also looking for Veteran players who want to take part in End-Game Content and regular ZvZ fights.<br></p>
+            <h1 class="">Treasury Dashboard</h1>
           </div>
-          <div class="col-md-2.  " style=""><img class="img-fluid d-block ml-2 float-right" src="assets/img/MKLogo.png" style="" width="210px"></div>
+          <div class="col-md-3">
+            <h4 class="">Last Updated: Placeholder</h4>
+          </div>
         </div>
         <div class="row">
-          <div class="col-md-12">
-            <p class="text-justify">With this content, we need to focus on management of silver, resources, items, and builds for the guild. While we manage these resources through Google Sheets, it is optimal to display information that looks aesthetically pleasing. We provide regearing for our guild for our events and because of this, it is important to make sure that we have an idea on our inventory. Introducing the Logistics website for Mongol Khanate that will implement information in this guild.<br></p>
-            <p class="text-justify">This is a private project that implements data into a Heroku database. Information is mostly stored, however, in Google Sheets where the data can be transferred directly to the website. With Heroku and Google Sheets, information is updated regularly.<br></p>
+          <div class="col-md-3">
+            <!-- CARDS -->
+            <div class="card shadow h-100 py-2 bg-dark" style="border-left: 5px solid #ffc107;">
+              <div class="card-body" style="">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1"> Current Treasury</div>
+                    <div class="h5 mb-0 font-weight-bold text-white">$Placeholder</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+                <p class="card-text text-warning text-justify" style=""><br>This displays the current guild funds that are available. As the Logistics Sheet is changed, this will obtain the most updated value.</p>
+              </div>
+            </div>
+            <!-- CARDS END -->
+          </div>
+          <div class="col-md-3">
+            <!-- CARDS -->
+            <div class="card shadow h-100 py-2 bg-dark" style="border-left: 5px solid #ffc107;">
+              <div class="card-body" style="">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1"> Total Gains</div>
+                    <div class="h5 mb-0 font-weight-bold text-success">$Placeholder</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+                <p class="card-text text-warning text-justify" style=""><br>The amount displayed here is the total amount of money that the guild has earned. This is from HCE's, Marketing, Donations, etc.</p>
+              </div>
+            </div>
+            <!-- CARDS END -->
+          </div>
+          <div class="col-md-3">
+            <!-- CARDS -->
+            <div class="card shadow h-100 py-2 bg-dark" style="border-left: 5px solid #ffc107;">
+              <div class="card-body" style="">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1"> Total Loss</div>
+                    <div class="h5 mb-0 font-weight-bold text-danger">$Placeholder</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+                <p class="card-text text-warning text-justify" style=""><br>This amount of money is the total loss which stems from buying gear, regearing lost gear, and other events that may lead to such losses</p>
+              </div>
+            </div>
+            <!-- CARDS END -->
+          </div>
+          <div class="col-md-3">
+            <!-- CARDS -->
+            <div class="card shadow h-100 py-2 bg-dark" style="border-left: 5px solid #ffc107;">
+              <div class="card-body" style="">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1"> Days Active</div>
+                    <div id="TimeActive" class="h5 mb-0 font-weight-bold text-info">Date Placeholder</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+                <p class="card-text text-warning text-justify" style=""><br>This shows the days that the guild has been active since the start of Mongol Khanate. This serves just as a reminder of how far we've come</p>
+              </div>
+            </div>
+            <!-- CARDS END -->
           </div>
         </div>
       </div>
@@ -66,61 +135,61 @@
     <div class="py-5" style="">
       <div class="container">
         <div class="row">
-          <div class="col-md-4" style=""><img class="img-fluid d-block ml-5 float-right" width="400px" src="assets/img/silver.png"></div>
-          <div class="col-md-8" style="">
-            <h1 class="">Treasury Information</h1>
-            <p class="text-justify">The Treasury page will be sync'ed with the Google Sheet which has the values for certain days and create graphs using the data. Information that will be useful would include the following:</p>
-            <p class=""><b>Guild Treasury:</b> The graph will display the amount of money in the guild with respect to time.</p>
-            <p class=""><b>Donation Margins:</b>&nbsp;The chart will display donations from the guild from fellow guild members.<br></p>
-            <p class="text-justify"><b>Gain/Loss Calculation:</b>&nbsp;Alongside this information, there will be an integration of many mathematical calculations.<br></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="py-5" style="">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6" style="">
-            <h1 class="">Resources</h1>
-            <p class="text-justify">Resources in the guild will be kept track of. These resources obtained are from gatherers from the guild. Additionally, resources will have potential calculations to create certain amounts of resources but that is still in the works. Resource calculation can be changed based on tax fees. The resources page, to reiterate, will hold these items:<br></p>
-            <p class="text-justify"><b>Resource Management: </b>Each resource type will be highlighted and noted.<br></p>
-            <p class="text-justify"><b>Resource Potential: </b>Calculations for resource crafting and fees will be taken into account.<br></p>
-            <p class="text-justify"><b>Artifact Management: </b>Ideally, there will be lists of artifacts stored by the guild and the information will be kept.<br></p>
-            <script> function redir2() {
+          <div class="col-md-9" style="">
+            <h1 class="">Earnings Overview</h1>
+            <img class="img-fluid d-block" src="assets/img/Database.png">
+            <script style=""> function redir2() {
                 location.href = "SignUp.html"
               }
             </script>
           </div>
-          <div class="col-md-6"><img class="img-fluid d-block pl-5" src="assets/img/Resources.png"></div>
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="">Top Donators</h1>
+              </div>
+            </div>
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action text-warning">$Placeholder - Donator 1</a>
+              <a class="list-group-item list-group-item-action text-warning">$Placeholder - Donator 2</a>
+              <a class="list-group-item list-group-item-action text-warning">$Placeholder - Donator 3</a><a class="list-group-item list-group-item-action text-warning">$Placeholder - Donator 4</a><a class="list-group-item list-group-item-action text-warning">$Placeholder - Donator 5</a><a class="list-group-item list-group-item-action text-warning">$Placeholder - Donator 6</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6"><img class="img-fluid d-block" src="assets/img/Database.png"></div>
-          <div class="col-md-6" style="">
-            <h1 class="">Database Information</h1>
-            <p class="text-justify">The Database will have a list of every item in the game in terms of equips. Their tiers will be highlighted as well as the amount in our inventory and the storage of key items for certain builds. These builds will be displayed in filtered views of the database which are part of the builds category. The Database is comprised of the following aspects:<br></p>
-            <p class="text-justify"><b>Master List:</b> All the items in the database for equips. Future stretch goal includes implementing the API for the current Albion Database.<br></p>
+          <div class="col-md-12" style="">
+            <h1 class="">Season Progress Bar</h1>
+            <p class="text-justify">Show a progress bar here for the season<br></p>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="py-5">
+      <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p class=""><b>Graphic Models: </b>Showcases relevant items to the guild and information based on what is necessary for guild contributions to meet targets for each item.</p>
-            <p class=""><b>Google Sheets Implementation: </b>Information is dragged from Google Sheets to fill the master list.</p>
+            <h1 class="">Alliance Information</h1>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="py-5">
-      <div class="container">
         <div class="row">
-          <div class="col-md-6" style="">
-            <h1 class="">Builds</h1>
-            <p class="text-justify">This view is a filtered view of the database which will focus on showing which builds are necessary for certain specs for each type of activity. The main meat of it is from the database from Google Sheets but using this, the builds can be shown in HTML in a more sophisticated view. This also can be used to explain why certain builds are meta. Finally, we can actually integrate a timeline as the meta changes so we can see how the meta adapts and evolves over time.</p>
+          <div class="col-md-4">
+            <h3 class="">Mongol Khanate</h3>
           </div>
-          <div class="col-md-6"><img class="img-fluid d-block pl-5" src="assets/img/build.png"></div>
+          <div class="col-md-4">
+            <h3 class="">We Are One</h3>
+          </div>
+          <div class="col-md-4">
+            <h3 class="">Sumos</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="">
+            <p class="text-justify">Pictures of Banner, Fame, etc.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -129,21 +198,11 @@
         <div class="row">
           <div class="col-md-3"><img class="img-fluid d-block" src="assets/img/todo.png"></div>
           <div class="col-md-9" style="">
-            <h1 class="">Future Stretch Goals</h1>
-            <p class="text-justify">The website is very limited because of the time consumption to make it look extremely nice so that it will be used longterm. Because of this, we will be providing a list of possible tasks that could be done in the future:</p>
-            <p class="text-justify"><b>Albion Database API:</b> The integration of this API will allow lookup of prices for items which will allow estimates for actual worth.<br></p>
-            <p class="text-justify"><b>Login Feature:</b> Allowing the user to log in will make the data more private for the Logistics Team. The requirement will allow us to prevent people from other guilds to obtain information on our Logistics.<br></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p class="text-justify"><b>Alerts: </b>Allowing users to have an alert feature makes it possible to recognize which resources we need.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p class="text-justify"><b>Avalonian Roadmap:&nbsp;</b>This will allow users to plot avalonian maps to different locations every day. If someone finds a path to certain areas, they can put information on here.</p>
-            <p class="text-justify"><b>Calendar of Events:&nbsp;</b>This idea would be extremely good if we managed to pull it off. It would integrate Discord API to generate a Calendar based on upcoming events.</p>
+            <h1 class="">Todo List</h1>
+            <p class="text-justify">TODO LIST for Treasury</p>
+            <p class="text-justify"><b>Implement Google API: </b>Right now, everything is a placeholder. There needs to be implementation and a chart</p>
+            <p class="text-justify"><b>Graphics: </b>The graphics that are missing are the following: Earnings Overview, Season Progress Bar, Alliance Information which holds things like total fame, etc</p>
+            <p class="text-justify"><b>Donator Margins: </b>Donations need to be implemented into the datasheet better</p>
           </div>
         </div>
       </div>
@@ -218,6 +277,12 @@
       </div>
     </div>
   </div>
+  <script>
+    var CurrentDate = new Date();
+    var StartDate = new Date(2017, 2, 9);
+    var DaysActive = parseInt((CurrentDate - StartDate) / (24 * 3600 * 1000));
+    document.getElementById("TimeActive").innerHTML = "<b>" + DaysActive + " Days</b>";
+  </script>
 </body>
 
 </html>

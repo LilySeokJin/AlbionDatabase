@@ -3252,7 +3252,8 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  min-height:125px;}
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
@@ -3266,6 +3267,22 @@ input[type="button"].btn-block {
 .card-body {
   flex: 1 1 auto;
   padding: 1.25rem; }
+  
+.card-body:hover {
+   height: 225px;
+}
+
+.card-text{
+	display:none;
+	visibility:hidden;
+	opacity: 0
+}
+
+.card-body:hover .card-text{
+   display:flex;
+   visibility: visible;
+   opacity: 1
+}
 
 .card-title {
   margin-bottom: 0.75rem; }
@@ -3798,18 +3815,18 @@ input[type="button"].btn-block {
     z-index: 1;
     color: #495057;
     text-decoration: none;
-    background-color: #f8f9fa; }
+    background-color: #151515; }
   .list-group-item-action:active {
     color: #333;
-    background-color: #e9ecef; }
+    background-color: #393939; }
 
 .list-group-item {
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125); }
+  background-color: #000;
+  border-bottom: 2px solid #ffc107; }
   .list-group-item:first-child {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
